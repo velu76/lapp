@@ -20,29 +20,26 @@
  	<!-- Collect the nav links, forms, and other content for toggling -->
  	<div class="collapse navbar-collapse navbar-ex1-collapse">
  		<ul class="nav navbar-nav navbar-right">
- 			<li><a href="#">Link</a></li>
- 			<li class="dropdown">
- 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
- 				<ul class="dropdown-menu">
- 					<li><a href="#">Action</a></li>
- 					<li><a href="#">Another action</a></li>
- 					<li><a href="#">Something else here</a></li>
- 					<li><a href="#">Separated link</a></li>
- 				</ul>
- 			</li>
+ 			{{> loginButtons}}
+ 			
  		</ul>
  	</div><!-- /.navbar-collapse -->
  </nav> 
 
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Welcome to GLA!</h1>
+
+		  			{{> hello}}
+			</div>
+		</div>
+
 
 </div>
 
 </body>
 
 <template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+  <p><i>Automating employee leave management is a breeze.....</i></p>
 </template>
