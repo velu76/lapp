@@ -6,12 +6,12 @@ Leave Application in Meteor
 2. Git integration with github **[DONE]**
 
 
-### Layout _this is the planned layout_ 
-D **_client_**
+### Layout (_Beta_)
+**_`client`_**
 
-D **_server_**
+**_`server`_**
 
-D **_both_**
-D   **_collections_**
-D   **_controllers_**
-D   **_permissions_**
+**_`both`_**  
+  =>  **_`collections`_**  
+  =>  **_`controllers`_**  
+  =>  **_`permissions`_**  
