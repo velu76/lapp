@@ -1,5 +1,5 @@
 # lapp
-![GLA](https://github.com/velu76/lapp/tree/master/public/imgs/logo.png)
+![GLA](https://github.com/velu76/lapp/public/imgs/logo.png)
 Leave Application in Meteor.
 
 ## About Leave Application
