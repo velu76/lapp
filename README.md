@@ -17,7 +17,7 @@ Leave Application in Meteor.
 4. Calendar integration
 5. Email agent
 6. Supervisor Approvals
-7. Administration
+7. Web Administration
 
 
 
