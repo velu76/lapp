@@ -1,12 +1,23 @@
 # lapp
-Leave Application in Meteor
+Leave Application in Meteor.
 
-## Todos
+## About Leave Application
+>This is my attempt in using Meteor to create a leave application.
+>The vision is to complete to a level this could be used as a mobile app.
+
+
+## To-do(s)
 1. Create the layout. **[DONE]**
 2. Git integration with github **[DONE]**
+3. Authentication
+4. Calendar integration
+5. Email agent
+6. Supervisor Approvals
+7. Administration
 
 
-### Layout (_Beta_)
+
+### File Structure Layout (_Beta_)
 **_`client`_**
 
 **_`server`_**
