@@ -54,4 +54,23 @@
 <!-- TEMPLATE: leaveForm -->
 <template name="leaveForm">
 
+    <table class="table table-bordered table-condensed">
+       <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Department</th>
+          <th>Employee Number</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+          <td>{{emp.fname}} {{emp.lname}}</td>
+          <td>{{emp.position}}</td>
+          <td>{{emp.department}}</td>
+          <td>{{emp.empnum}}</td>
+        </tr>
+       </tbody>
+    </table>
+
 </template>

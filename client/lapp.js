@@ -2,9 +2,12 @@ if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
+  Template.leaveForm.helpers({
+    emp: function () {
+      userID = Meteor.userId();
+      // console.log("UID:" + userID);
+      // console.log("MQ:" + Employees.findOne({},{empid: userID}));
+      return Employees.findOne({},{empid: userID});
     }
   });
 
@@ -14,6 +17,9 @@ if (Meteor.isClient) {
       Session.set('counter', Session.get('counter') + 1);
     }
   });
+
+
+
 }
 
 if (Meteor.isServer) {
