@@ -3,43 +3,55 @@
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
 
-<nav class="navbar navbar-default" role="navigation">
- 	<!-- Brand and toggle get grouped for better mobile display -->
- 	<div class="navbar-header">
- 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
- 			<span class="sr-only">Toggle navigation</span>
- 			<span class="icon-bar"></span>
- 			<span class="icon-bar"></span>
- 			<span class="icon-bar"></span>
- 		</button>
- 		<a class="navbar-brand" href="#"><span><img src="/imgs/logo_35x74.png" /></span></a>
- 	</div>
- 
- 	<!-- Collect the nav links, forms, and other content for toggling -->
- 	<div class="collapse navbar-collapse navbar-ex1-collapse">
- 		<ul class="nav navbar-nav navbar-right">
- 			{{> loginButtons}}
- 			
- 		</ul>
- 	</div><!-- /.navbar-collapse -->
- </nav> 
+    <nav class="navbar navbar-default" role="navigation">
+     	<!-- Brand and toggle get grouped for better mobile display -->
+     	<div class="navbar-header">
+     		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+     			<span class="sr-only">Toggle navigation</span>
+     			<span class="icon-bar"></span>
+     			<span class="icon-bar"></span>
+     			<span class="icon-bar"></span>
+     		</button>
+     		<a class="navbar-brand" href="#"><span><img src="/imgs/logo_35x74.png" /></span></a>
+     	</div>
 
+     	<!-- Collect the nav links, forms, and other content for toggling -->
+     	<div class="collapse navbar-collapse navbar-ex1-collapse">
+     		<ul class="nav navbar-nav navbar-right">
+     			{{> loginButtons}}
 
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Welcome to GLA!</h1>
-
-		  			{{> hello}}
-			</div>
-		</div>
-
-
-</div>
-
+     		</ul>
+     	</div><!-- /.navbar-collapse -->
+     </nav>
+        {{#if currentUser}}
+          {{> leaveForm}}
+        {{else}}
+          {{> welcome}}
+        {{/if}}
+    </div>
 </body>
 
-<template name="hello">
-  <p><i>Automating employee leave management is a breeze.....</i></p>
+
+
+
+
+<!-- TEMPLATE: welcome -->
+<template name="welcome">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome to GLA!</h1>
+      <p><i>Automating employee leave management is a breeze.....</i></p>
+    </div>
+  </div>
+</template>
+
+
+
+
+
+<!-- TEMPLATE: leaveForm -->
+<template name="leaveForm">
+
 </template>
