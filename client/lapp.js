@@ -4,6 +4,41 @@ if (Meteor.isClient) {
     return moment(date).format('DD-MM-YYYY');
   });
 
+
+  Template.registerHelper('displayLType', function(lt) {
+    var lType = "NIL"
+    switch(lt) {
+      case 'AL':
+        lType = 'Annual Leave';
+        break;
+
+      case 'ML':
+          lType = 'Medical Leave';
+          break;
+
+      case 'CCL':
+        lType = 'Child Care Leave';
+        break;
+
+      case 'OIL':
+        lType = 'Off In Leau';
+        break;
+
+      case 'NPL':
+        lType = 'No Pay Leave';
+        break;
+
+      case 'O':
+        lType = 'Others';
+        break;
+    }
+
+    return lType;
+  });
+
+
+
+
   Template.leaveForm.helpers({
     emp: function () {
       userID = Meteor.userId();
