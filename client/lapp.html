@@ -73,4 +73,32 @@
        </tbody>
     </table>
 
+
+    <table class="table table-bordered table-condensed">
+           <thead>
+            <tr>
+              <th>Leave Number</th>
+              <th>Date applied</th>
+              <th>From (Date)</th>
+              <th>To (Date)</th>
+              <th>Type</th>
+              <th>Days</th>
+              <th>Status</th>
+            </tr>
+           </thead>
+           <tbody>
+             {{#each ldetails}}
+            <tr>
+              <td>{{lnum}}</td>
+              <td>{{formatDate dapp}}</td>
+              <td>{{formatDate dfrom}}</td>
+              <td>{{formatDate dto}}</td>
+              <td>{{type}}</td>
+              <td>{{days}}</td>
+              <td>{{status}}</td>
+            </tr>
+            {{/each}}
+           </tbody>
+    </table>
+
 </template>

@@ -1,6 +1,8 @@
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
+
+  Template.registerHelper('formatDate', function(date) {
+    return moment(date).format('DD-MM-YYYY');
+  });
 
   Template.leaveForm.helpers({
     emp: function () {
@@ -8,6 +10,11 @@ if (Meteor.isClient) {
       // console.log("UID:" + userID);
       // console.log("MQ:" + Employees.findOne({},{empid: userID}));
       return Employees.findOne({},{empid: userID});
+    },
+
+    ldetails : function() {
+      userID = Meteor.userId();
+      return Leaves.find({}, {empid: userID});
     }
   });
 
