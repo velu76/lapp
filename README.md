@@ -40,7 +40,8 @@ The following section details out the design details of the application.
 
 Leave Application uses the following Mongo Collections.  
 
-### Leaves
+### Leaves  
+This is the leave collection of the all the leaves taken by a particular employee.  
 
 | **Row  Name** | **Describition**                                                                                       |
 |---------------|--------------------------------------------------------------------------------------------------------|
@@ -59,8 +60,8 @@ Leave Application uses the following Mongo Collections.
 | empid         | Employee ID - For referencing requirements                                                             |  
 
 
-
-### Employees
+### Employees  
+This is the employee collection, details of the employees are stored in this.  
 
 | **Row  Name** | **Describition**                           |
 |---------------|--------------------------------------------|
@@ -71,3 +72,25 @@ Leave Application uses the following Mongo Collections.
 | position      | Position - Employee's position             |
 | department    | Department - Employee's department         |
 | uid           | User ID - Referencing to user collection   |
+
+
+### Leave Entitled  
+This collection stores all the leave entitlements of each employee.  
+
+| **Row Name** 	| **Description**                                                       	|
+|--------------	|-----------------------------------------------------------------------	|
+| empnum       	| Employee Number - For reference to Employee collection.               	|
+| al           	| Annual Leave - Entitled as per employment contract.                   	|
+| ml           	| Medical Leave - Entitled as per employment contract.                  	|
+| ccl          	| Child Care Leave - Entitled as per employment contract.               	|
+| sl           	| Study Leave / Exam Leave - Entitled as per employment contract.       	|
+| oil          	| Off-In-Lieu - Entitled as per employment contract.                    	|
+| mal          	| Maternity Leave (Females only) - Entitled as per employment contract. 	|
+| others       	| Others - Entitled as per employment contract.                         	|
+| ual          	| Utilised Annual Leave                                                 	|
+| uml          	| Utilised Medical Leave                                                	|
+| uccl         	| Utilised Child Care Leave                                             	|
+| usl          	| Utilised Sick Leave                                                   	|
+| uoil         	| Utilised Off-In-Leave                                                 	|
+| mal          	| Utilised Maternity Leave                                              	|
+| uothers      	| Utilised Other leaves                                                 	|
