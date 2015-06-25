@@ -54,6 +54,12 @@
 <!-- TEMPLATE: leaveForm -->
 <template name="leaveForm">
 
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Employee Details</h3>
+      </div>
+    </div>
+
     <table class="table table-bordered table-condensed">
        <thead>
         <tr>
@@ -72,6 +78,12 @@
         </tr>
        </tbody>
     </table>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Leave Details</h3>
+      </div>
+    </div>
 
 
     <table class="table table-bordered table-condensed">
@@ -98,6 +110,61 @@
               <td>{{status}}</td>
             </tr>
             {{/each}}
+           </tbody>
+    </table>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Leave Balance Status</h3>
+      </div>
+    </div>
+
+
+    <table class="table table-bordered table-condensed">
+           <thead>
+            <tr>
+              <th></th>
+              <th>Annual Leave</th>
+              <th>Mdecial Leave</th>
+              <th>Child Care Leave</th>
+              <th>Study Leave</th>
+              <th>Maternity Leave</th>
+              <th>Off-In-Lieu</th>
+              <th>Others</th>
+            </tr>
+
+            <tr>
+              <th>Used</th>
+            </tr>
+
+            <tr>
+              <th>Balance</th>
+            </tr>
+
+           </thead>
+           <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
            </tbody>
     </table>
 
