@@ -40,7 +40,7 @@ The following section details out the design details of the application.
 
 Leave Application uses the following Mongo Collections.  
 
-### Leaves 
+### Leaves
 
 | **Row  Name** | **Describition**                                                                                       |
 |---------------|--------------------------------------------------------------------------------------------------------|
@@ -54,11 +54,12 @@ Leave Application uses the following Mongo Collections.
 | status        | Status - Leave status as updated by Supervisors (Pending, Approved, Rejected, Appealing).              |
 | reason        | Reason - Employee's reason for leave application.                                                      |
 | remarks       | Remarks - Supervisor's  or HR's remarks.                                                               |
-| appd          | Approval Date - Supervisor's date of processing leave application.                                     |
+| appdate       | Approval Date - Supervisor's date of processing leave application.                                     |
 | docs          | Documents - Employee's documents (Medical Certificate, Examination Slip, etc).                         |  
-  
-  
-  
+| empid         | Employee ID - For referencing requirements                                                             |  
+
+
+
 ### Employees
 
 | **Row  Name** | **Describition**                           |
@@ -69,3 +70,4 @@ Leave Application uses the following Mongo Collections.
 | doe           | Date of Employment                         |
 | position      | Position - Employee's position             |
 | department    | Department - Employee's department         |
+| uid           | User ID - Referencing to user collection   |

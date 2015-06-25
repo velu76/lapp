@@ -28,6 +28,10 @@ if (Meteor.isClient) {
         lType = 'No Pay Leave';
         break;
 
+      case 'MAL':
+        lType = 'Maternity Leave';
+        break;
+
       case 'O':
         lType = 'Others';
         break;
