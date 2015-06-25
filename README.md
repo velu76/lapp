@@ -30,3 +30,42 @@ Leave Application in Meteor.
   =>  **_`collections`_**  
   =>  **_`controllers`_**  
   =>  **_`permissions`_**  
+
+
+## Design Details
+
+The following section details out the design details of the application.
+
+### Mongo Collections
+
+Leave Application uses the following Mongo Collections.  
+
+### Leaves 
+
+| **Row  Name** | **Describition**                                                                                       |
+|---------------|--------------------------------------------------------------------------------------------------------|
+| lnum          | Leave Number - Needed  for referencing.                                                                |
+| dapp          | Date Applied - Date of this leave application was submitted.                                           |
+| dfrom         | Date From - Start date of leave.                                                                       |
+| dto           | Date To - End date of leave.                                                                           |
+| type          | Type - Type of leave (Annual Leave, Medical Leave, Child Care Leave, etc).                             |
+| fhd           | Full Half Day - Determines if full day or half day leave.                                              |
+| days          | Days - Total days leave taken. This is saved in database instead of calculations for faster rendering. |
+| status        | Status - Leave status as updated by Supervisors (Pending, Approved, Rejected, Appealing).              |
+| reason        | Reason - Employee's reason for leave application.                                                      |
+| remarks       | Remarks - Supervisor's  or HR's remarks.                                                               |
+| appd          | Approval Date - Supervisor's date of processing leave application.                                     |
+| docs          | Documents - Employee's documents (Medical Certificate, Examination Slip, etc).                         |  
+  
+  
+  
+### Employees
+
+| **Row  Name** | **Describition**                           |
+|---------------|--------------------------------------------|
+| empnum        | Employee Number - Needed  for referencing. |
+| fname         | First Name                                 |
+| lname         | Last Name                                  |
+| doe           | Date of Employment                         |
+| position      | Position - Employee's position             |
+| department    | Department - Employee's department         |
