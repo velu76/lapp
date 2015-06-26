@@ -74,7 +74,7 @@ This is the employee collection, details of the employees are stored in this.
 | uid           | User ID - Referencing to user collection   |
 
 
-### Leave Entitled  
+### LEntitles
 This collection stores all the leave entitlements of each employee.  
 
 | **Row Name** 	| **Description**                                                       	|
