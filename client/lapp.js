@@ -41,6 +41,17 @@ if (Meteor.isClient) {
   });
 
 
+// Calculates the balances of leaves.
+// e = entitled
+// u = used
+// therefore balance = e-u
+  Template.registerHelper('dBalance', function(e,u){
+    var balance = 0;
+    balance = e - u;
+    return balance;
+  });
+
+
 
 
   Template.leaveForm.helpers({
@@ -54,19 +65,19 @@ if (Meteor.isClient) {
     ldetails : function() {
       userID = Meteor.userId();
       return Leaves.find({}, {empid: userID});
+    },
+
+    lentitles: function() {
+      userID = Meteor.userId();
+      console.log("LE: "+ LEntitles.find({}, {empid: userID}).count());
+      return LEntitles.find({}, {empid: userID});
     }
   });
-
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
-
-
-
 }
+
+
+
+
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
