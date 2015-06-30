@@ -13,7 +13,7 @@ Leave Application in Meteor.
 ## To-do(s)
 1. Create the layout. **[DONE]**
 2. Git integration with github **[DONE]**
-3. Authentication
+3. Authentication **[DONE]**
 4. Calendar integration
 5. Email agent
 6. Supervisor Approvals
@@ -21,7 +21,7 @@ Leave Application in Meteor.
 
 
 
-### File Structure Layout (_Beta_)
+### File Structure Layout (_Alpha_)
 **_`client`_**
 
 **_`server`_**
@@ -30,7 +30,7 @@ Leave Application in Meteor.
   =>  **_`collections`_**  
   =>  **_`controllers`_**  
   =>  **_`permissions`_**  
-
+_The file structure is currently undergoing some minor changes. More on this soon._
 
 ## Design Details
 
