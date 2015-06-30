@@ -61,11 +61,11 @@ This is the leave collection of the all the leaves taken by a particular employe
 
 
 ### Employees  
-This is the employee collection, details of the employees are stored in this.  
+This is the employee collection, details of the employees are stored in this. **_Changed empnum to empid for more clarity in code and collection._**
 
 | **Row  Name** | **Describition**                           |
 |---------------|--------------------------------------------|
-| empnum        | Employee Number - Needed  for referencing. |
+| empid         | Employee Number - Needed  for referencing. |
 | fname         | First Name                                 |
 | lname         | Last Name                                  |
 | doe           | Date of Employment                         |
@@ -75,11 +75,11 @@ This is the employee collection, details of the employees are stored in this.
 
 
 ### LEntitles
-This collection stores all the leave entitlements of each employee.  
+This collection stores all the leave entitlements of each employee.**_Changed empnum to empid for more clarity in code and collection._**  
 
 | **Row Name** 	| **Description**                                                       	|
 |--------------	|-----------------------------------------------------------------------	|
-| empnum       	| Employee Number - For reference to Employee collection.               	|
+| empid       	| Employee Number - For reference to Employee collection.               	|
 | al           	| Annual Leave - Entitled as per employment contract.                   	|
 | ml           	| Medical Leave - Entitled as per employment contract.                  	|
 | ccl          	| Child Care Leave - Entitled as per employment contract.               	|
