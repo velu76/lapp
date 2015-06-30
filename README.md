@@ -1,5 +1,5 @@
 # lapp
-![GLA][logo]  
+![GLA][logo]  _The logo is not a trademark or branding._
 Leave Application in Meteor.
 
 [logo]: https://github.com/velu76/lapp/tree/master/public/imgs/logo.png
